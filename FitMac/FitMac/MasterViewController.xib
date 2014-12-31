@@ -3,7 +3,6 @@
     <dependencies>
         <deployment version="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
-        <plugIn identifier="com.apple.QuartzComposerIBPlugin" version="3336"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController">
@@ -16,13 +15,6 @@
         <customView id="1">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <subviews>
-                <qcView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ok-sz-cAe">
-                    <rect key="frame" x="145" y="68" width="191" height="136"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <color key="eraseColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                </qcView>
-            </subviews>
         </customView>
         <button verticalHuggingPriority="750" id="0u9-Wl-Klc">
             <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
