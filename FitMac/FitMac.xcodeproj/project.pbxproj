@@ -18,6 +18,16 @@
 		9272747B1A5194D300B71BF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9272745A1A5194D300B71BF1 /* Cocoa.framework */; };
 		927274831A5194D300B71BF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 927274811A5194D300B71BF1 /* InfoPlist.strings */; };
 		927274851A5194D300B71BF1 /* FitMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 927274841A5194D300B71BF1 /* FitMacTests.m */; };
+		92B778EC1A519ABB00E6419D /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B778EB1A519ABB00E6419D /* decode.c */; };
+		92B779431A519F3900E6419D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B779411A519F3900E6419D /* MasterViewController.m */; };
+		92B779441A519F3900E6419D /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B779421A519F3900E6419D /* MasterViewController.xib */; };
+		92B779471A51A0E900E6419D /* FitExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B779461A51A0E900E6419D /* FitExtractor.m */; };
+		92B779561A51A58400E6419D /* fit_convert.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B779491A51A58400E6419D /* fit_convert.c */; };
+		92B779571A51A58400E6419D /* fit_crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B7794B1A51A58400E6419D /* fit_crc.c */; };
+		92B7795A1A51A58400E6419D /* fit_ram.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B779521A51A58400E6419D /* fit_ram.c */; };
+		92B7795B1A51A58400E6419D /* fit.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B779541A51A58400E6419D /* fit.c */; };
+		92B779611A51A8F100E6419D /* fit_product.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B7795E1A51A8F100E6419D /* fit_product.c */; };
+		92B7796F1A51C6D000E6419D /* example.fit in Resources */ = {isa = PBXBuildFile; fileRef = 92B7796E1A51C6C100E6419D /* example.fit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +37,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 927274561A5194D300B71BF1;
 			remoteInfo = FitMac;
+		};
+		92B779851A51CEE800E6419D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92B7797F1A51CEE800E6419D /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+		92B779871A51CEE800E6419D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92B7797F1A51CEE800E6419D /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = UnitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,6 +74,27 @@
 		927274801A5194D300B71BF1 /* FitMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitMacTests-Info.plist"; sourceTree = "<group>"; };
 		927274821A5194D300B71BF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		927274841A5194D300B71BF1 /* FitMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitMacTests.m; sourceTree = "<group>"; };
+		92B778EB1A519ABB00E6419D /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		92B779401A519F3900E6419D /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		92B779411A519F3900E6419D /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		92B779421A519F3900E6419D /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		92B779451A51A0E900E6419D /* FitExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitExtractor.h; sourceTree = "<group>"; };
+		92B779461A51A0E900E6419D /* FitExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitExtractor.m; sourceTree = "<group>"; };
+		92B779481A51A58400E6419D /* fit_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_config.h; sourceTree = "<group>"; };
+		92B779491A51A58400E6419D /* fit_convert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fit_convert.c; sourceTree = "<group>"; };
+		92B7794A1A51A58400E6419D /* fit_convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_convert.h; sourceTree = "<group>"; };
+		92B7794B1A51A58400E6419D /* fit_crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fit_crc.c; sourceTree = "<group>"; };
+		92B7794C1A51A58400E6419D /* fit_crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_crc.h; sourceTree = "<group>"; };
+		92B7794F1A51A58400E6419D /* fit_include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_include.h; sourceTree = "<group>"; };
+		92B779521A51A58400E6419D /* fit_ram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fit_ram.c; sourceTree = "<group>"; };
+		92B779531A51A58400E6419D /* fit_ram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_ram.h; sourceTree = "<group>"; };
+		92B779541A51A58400E6419D /* fit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fit.c; sourceTree = "<group>"; };
+		92B779551A51A58400E6419D /* fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit.h; sourceTree = "<group>"; };
+		92B7795D1A51A8F100E6419D /* fit_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_example.h; sourceTree = "<group>"; };
+		92B7795E1A51A8F100E6419D /* fit_product.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fit_product.c; sourceTree = "<group>"; };
+		92B7795F1A51A8F100E6419D /* fit_product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fit_product.h; sourceTree = "<group>"; };
+		92B7796E1A51C6C100E6419D /* example.fit */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.fit; sourceTree = "<group>"; };
+		92B7797F1A51CEE800E6419D /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = ../CorePlot_1.4/Source/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +121,9 @@
 		9272744E1A5194D300B71BF1 = {
 			isa = PBXGroup;
 			children = (
+				92B7797F1A51CEE800E6419D /* CorePlot.xcodeproj */,
+				92B779451A51A0E900E6419D /* FitExtractor.h */,
+				92B779461A51A0E900E6419D /* FitExtractor.m */,
 				927274601A5194D300B71BF1 /* FitMac */,
 				9272747E1A5194D300B71BF1 /* FitMacTests */,
 				927274591A5194D300B71BF1 /* Frameworks */,
@@ -115,11 +163,17 @@
 		927274601A5194D300B71BF1 /* FitMac */ = {
 			isa = PBXGroup;
 			children = (
+				92B7792B1A519E6800E6419D /* FitSDK */,
+				92B778ED1A519B1A00E6419D /* ExampleFitFiles */,
+				92B778EB1A519ABB00E6419D /* decode.c */,
 				9272746C1A5194D300B71BF1 /* AppDelegate.h */,
 				9272746D1A5194D300B71BF1 /* AppDelegate.m */,
 				9272746F1A5194D300B71BF1 /* MainMenu.xib */,
 				927274721A5194D300B71BF1 /* Images.xcassets */,
 				927274611A5194D300B71BF1 /* Supporting Files */,
+				92B779401A519F3900E6419D /* MasterViewController.h */,
+				92B779411A519F3900E6419D /* MasterViewController.m */,
+				92B779421A519F3900E6419D /* MasterViewController.xib */,
 			);
 			path = FitMac;
 			sourceTree = "<group>";
@@ -152,6 +206,43 @@
 				927274811A5194D300B71BF1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92B778ED1A519B1A00E6419D /* ExampleFitFiles */ = {
+			isa = PBXGroup;
+			children = (
+				92B7796E1A51C6C100E6419D /* example.fit */,
+			);
+			name = ExampleFitFiles;
+			sourceTree = "<group>";
+		};
+		92B7792B1A519E6800E6419D /* FitSDK */ = {
+			isa = PBXGroup;
+			children = (
+				92B779481A51A58400E6419D /* fit_config.h */,
+				92B779491A51A58400E6419D /* fit_convert.c */,
+				92B7795D1A51A8F100E6419D /* fit_example.h */,
+				92B7795E1A51A8F100E6419D /* fit_product.c */,
+				92B7795F1A51A8F100E6419D /* fit_product.h */,
+				92B7794A1A51A58400E6419D /* fit_convert.h */,
+				92B7794B1A51A58400E6419D /* fit_crc.c */,
+				92B7794C1A51A58400E6419D /* fit_crc.h */,
+				92B7794F1A51A58400E6419D /* fit_include.h */,
+				92B779521A51A58400E6419D /* fit_ram.c */,
+				92B779531A51A58400E6419D /* fit_ram.h */,
+				92B779541A51A58400E6419D /* fit.c */,
+				92B779551A51A58400E6419D /* fit.h */,
+			);
+			name = FitSDK;
+			sourceTree = "<group>";
+		};
+		92B779801A51CEE800E6419D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92B779861A51CEE800E6419D /* CorePlot.framework */,
+				92B779881A51CEE800E6419D /* UnitTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +308,12 @@
 			mainGroup = 9272744E1A5194D300B71BF1;
 			productRefGroup = 927274581A5194D300B71BF1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 92B779801A51CEE800E6419D /* Products */;
+					ProjectRef = 92B7797F1A51CEE800E6419D /* CorePlot.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				927274561A5194D300B71BF1 /* FitMac */,
@@ -225,11 +322,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		92B779861A51CEE800E6419D /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 92B779851A51CEE800E6419D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		92B779881A51CEE800E6419D /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 92B779871A51CEE800E6419D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		927274551A5194D300B71BF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B7796F1A51C6D000E6419D /* example.fit in Resources */,
+				92B779441A519F3900E6419D /* MasterViewController.xib in Resources */,
 				927274651A5194D300B71BF1 /* InfoPlist.strings in Resources */,
 				927274731A5194D300B71BF1 /* Images.xcassets in Resources */,
 				9272746B1A5194D300B71BF1 /* Credits.rtf in Resources */,
@@ -252,7 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B7795B1A51A58400E6419D /* fit.c in Sources */,
+				92B7795A1A51A58400E6419D /* fit_ram.c in Sources */,
 				9272746E1A5194D300B71BF1 /* AppDelegate.m in Sources */,
+				92B779431A519F3900E6419D /* MasterViewController.m in Sources */,
+				92B779571A51A58400E6419D /* fit_crc.c in Sources */,
+				92B778EC1A519ABB00E6419D /* decode.c in Sources */,
+				92B779561A51A58400E6419D /* fit_convert.c in Sources */,
+				92B779611A51A8F100E6419D /* fit_product.c in Sources */,
+				92B779471A51A0E900E6419D /* FitExtractor.m in Sources */,
 				927274671A5194D300B71BF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +588,7 @@
 				9272748A1A5194D300B71BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9272748B1A5194D300B71BF1 /* Build configuration list for PBXNativeTarget "FitMacTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +597,7 @@
 				9272748D1A5194D300B71BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
